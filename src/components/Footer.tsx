@@ -1,5 +1,4 @@
-
-import { Mail, Phone, MapPin, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -9,7 +8,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
               <img 
-                src="/lovable-uploads/aa83f738-7924-4993-91e7-1fc5b8f1cc2e.png" 
+                src="/favicon.ico" 
                 alt="Quantum Resources"
                 className="h-10 w-auto mr-3"
               />
@@ -19,14 +18,6 @@ const Footer = () => {
               Your trusted partner in supply chain management with three decades of expertise 
               in commodity trading, shipping, and management consultancy.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="bg-purple-600 p-2 rounded-lg hover:bg-purple-700 transition-colors">
-                <Linkedin size={20} />
-              </a>
-              <a href="#" className="bg-purple-600 p-2 rounded-lg hover:bg-purple-700 transition-colors">
-                <Twitter size={20} />
-              </a>
-            </div>
           </div>
 
           <div>
@@ -63,10 +54,6 @@ const Footer = () => {
             <p className="text-gray-400 text-sm">
               © 2025 Quantum Resources. All rights reserved.
             </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
-            </div>
           </div>
         </div>
       </div>

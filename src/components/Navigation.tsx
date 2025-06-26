@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -11,7 +10,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/aa83f738-7924-4993-91e7-1fc5b8f1cc2e.png" 
+              src="/favicon.ico" 
               alt="Quantum Resources"
               className="h-10 w-auto"
             />

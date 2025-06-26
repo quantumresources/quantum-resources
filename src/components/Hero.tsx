@@ -1,4 +1,3 @@
-
 import { ArrowRight, Globe, Shield, Zap } from 'lucide-react';
 
 const Hero = () => {
@@ -23,7 +22,15 @@ const Hero = () => {
               Powering India's growing economy with reliable thermal coal solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-white text-purple-800 px-8 py-4 rounded-lg font-semibold hover:bg-purple-50 transition-all duration-300 flex items-center justify-center group">
+              <button
+                className="bg-white text-purple-800 px-8 py-4 rounded-lg font-semibold hover:bg-purple-50 transition-all duration-300 flex items-center justify-center group"
+                onClick={() => {
+                  const section = document.getElementById('services');
+                  if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+              >
                 Explore Our Services
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
               </button>
