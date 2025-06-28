@@ -1,4 +1,5 @@
 import { ArrowRight, Globe, Shield, Zap } from 'lucide-react';
+import ContactDialog from './ContactDialog';
 
 const Hero = () => {
   return (
@@ -34,9 +35,11 @@ const Hero = () => {
                 Explore Our Services
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
               </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-purple-800 transition-all duration-300">
-                Contact Us Today
-              </button>
+              <ContactDialog>
+                <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-purple-800 transition-all duration-300">
+                  Contact Us
+                </button>
+              </ContactDialog>
             </div>
           </div>
           
@@ -54,7 +57,7 @@ const Hero = () => {
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
               <Zap className="text-yellow-400 mb-4" size={40} />
               <h3 className="text-white text-xl font-semibold mb-2">Energy Solutions</h3>
-              <p className="text-purple-100">Reliable thermal coal supply for major industries</p>
+              <p className="text-purple-100">Reliable thermal coal supply for small and medium industries</p>
             </div>
           </div>
         </div>

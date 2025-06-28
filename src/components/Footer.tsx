@@ -29,7 +29,8 @@ const Footer = () => {
               <li><a href="#team" className="text-gray-300 hover:text-white transition-colors">Our Team</a></li>
             </ul>
           </div>
-
+        
+          {/*
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
             <div className="space-y-3">
@@ -46,7 +47,9 @@ const Footer = () => {
                 <span className="text-gray-300">India</span>
               </div>
             </div>
+
           </div>
+          */}
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8">

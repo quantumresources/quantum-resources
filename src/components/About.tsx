@@ -1,11 +1,8 @@
-
 import { Calendar, Globe, Zap, TrendingUp } from 'lucide-react';
 
 const About = () => {
   const stats = [
     { icon: Calendar, label: "Years of Experience", value: "30+" },
-    { icon: Globe, label: "Industries Served", value: "6+" },
-    { icon: Zap, label: "Energy Contribution", value: "50%+" },
     { icon: TrendingUp, label: "Founded", value: "2025" }
   ];
 
@@ -36,9 +33,9 @@ const About = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-6">
+          <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-6 mt-8 mb-8 lg:mb-0">
             {stats.map((stat, index) => (
-              <div key={index} className="bg-gradient-to-br from-purple-600 to-purple-800 rounded-xl p-6 text-white text-center">
+              <div key={index} className="bg-gradient-to-br from-purple-600 to-purple-800 rounded-xl p-6 text-white text-center min-w-[180px] shadow-lg">
                 <stat.icon className="mx-auto mb-3 text-yellow-400" size={40} />
                 <div className="text-2xl font-bold mb-1">{stat.value}</div>
                 <div className="text-purple-200 text-sm">{stat.label}</div>

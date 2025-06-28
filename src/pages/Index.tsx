@@ -1,12 +1,15 @@
-
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Services from '@/components/Services';
 import Team from '@/components/Team';
 import Footer from '@/components/Footer';
+import { Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
+import { useState } from 'react';
+import ContactDialog from '@/components/ContactDialog';
 
 const Index = () => {
+  const [formStatus, setFormStatus] = useState<'idle' | 'success' | 'error'>('idle');
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -20,9 +23,11 @@ const Index = () => {
           <p className="text-xl text-purple-100 mb-8 max-w-3xl mx-auto">
             Let's discuss how Quantum Resources can power your business with reliable supply chain solutions
           </p>
-          <button className="bg-white text-purple-800 px-8 py-4 rounded-lg font-semibold hover:bg-purple-50 transition-all duration-300 text-lg">
-            Get in Touch Today
-          </button>
+          <ContactDialog>
+            <button className="bg-white text-purple-800 px-8 py-4 rounded-lg font-semibold hover:bg-purple-50 transition-all duration-300 text-lg">
+              Get in Touch Today
+            </button>
+          </ContactDialog>
         </div>
       </section>
       <Footer />
