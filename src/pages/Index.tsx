@@ -25,7 +25,7 @@ const Index = () => {
           </p>
           <ContactDialog>
             <button className="bg-white text-purple-800 px-8 py-4 rounded-lg font-semibold hover:bg-purple-50 transition-all duration-300 text-lg">
-              Get in Touch
+              Contact us
             </button>
           </ContactDialog>
         </div>
